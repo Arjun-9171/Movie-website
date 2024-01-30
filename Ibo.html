@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="All.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+        <nav>
+      <div class="logo">Movie site</div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="index.html">Upcoming</a></li>
+        <li><a href="English.html">English</a></li>
+        <li><a href="Tamil.html">Tamil</a></li>
+        <li><a href="Foreign.html">Foreign</a></li>
+         <li><a href="Ibo.html">Anime</a></li>
+        <li><a href="Video.html">Videos</a></li>
+      </ul>
+    </nav>
+  <br>
+
+  <html>
+<head>
+   <div class="container">
+        <div class="box">
+        <div class="image">
+        <img src = "https://static0.gamerantimages.com/wordpress/wp-content/uploads/2023/08/jujutsu-kaisen-season-2-shibuya-incident-poster-cropped.jpg">
+          </div>
+          <div class="name_job">JJK S2</div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p> JJK takes a dark and interesting turn!</p>
+          <div class="btns">
+            <button> Watch </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQr8RR0tEv4fvsdQqEJs_4HbAQKmHgN0zjE8w&usqp=CAU">
+          </div>
+          <div class="name_job">AOT S4 the movie</div>
+          <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p> While the ending might be underwhelming, the journey was magnificent.</p>
+          <div class="btns">
+            <button> Watch </button>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image">
+           <img src = "https://images.immediate.co.uk/production/volatile/sites/3/2023/11/Classroom-of-the-elite-Cropped-46e08bf.jpg?quality=90&resize=980,654">
+          </div>
+          <div class="name_job"> C.O.T.E </div>
+            <div class="rating">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="far fa-star"></i>
+            <i class="far fa-star"></i>
+          </div>
+          <p> An enjoyable and interesting anime that gets stale at times </p>
+          <div class="btns">
+            <button> Watch </button>
+          </div>
+        </div>
+
+
+        </body>
+  </html>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const tabs = document.querySelectorAll('nav ul li a');
+
+      tabs.forEach(tab => {
+        tab.addEventListener('click', function () {
+          // Remove "active" class from all tabs
+          tabs.forEach(t => t.classList.remove('active'));
+
+          // Add "active" class to the clicked tab
+          this.classList.add('active');
+        });
+      });
+    });
+  </script>

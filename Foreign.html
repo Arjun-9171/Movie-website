@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+      <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="All.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+        <nav>
+      <div class="logo">Movie site</div>
+      <input type="checkbox" id="click">
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a href="index.html">Upcoming</a></li>
+        <li><a href="English.html">English</a></li>
+        <li><a href="Tamil.html">Tamil</a></li>
+        <li><a href="Foreign.html">Foreign</a></li>
+        <li><a href="Ibo.html">Anime</a></li>
+        <li><a href="Video.html">Videos</a></li>
+      </ul>
+    </nav>
+  <br>
+    <div class="container">
+      <div class="box">
+      <div class="image">
+      <img src = "https://th-i.thgim.com/public/entertainment/movies/6z49gf/article67606684.ece/alternates/LANDSCAPE_1200/Shah%20Rukh%20Khan%20in%20the%20trailer%20for%20%27Dunki%27.jpg">
+        </div>
+        <div class="name_job">Dunki</div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p> Funny, emotional, and entertaining! </p>
+        <div class="btns">
+          <button> Watch </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+       <img src="https://variety.com/wp-content/uploads/2023/12/Salaar-Part-1-Ceasefire.jpg">
+        </div>
+        <div class="name_job">Salaar</div>
+        <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p> A lot of buildup, very little substance! </p>
+        <div class="btns">
+          <button> Watch </button>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+         <img src = "https://i.ytimg.com/vi/X6cnfMOVHMU/maxresdefault.jpg">
+        </div>
+        <div class="name_job"> Fighter </div>
+          <div class="rating">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half"></i>
+          <i class="far fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+        <p> The patriotism and drama stunt the potential this film had.</p>
+        <div class="btns">
+          <button> Watch </button>
+        </div>
+      </div>
+
+
+      </body>
+</html>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      navLinks.forEach(function(navLink) {
+          navLink.addEventListener('click', function(event) {
+              event.preventDefault();
+
+             
+              navLinks.forEach(function(link) {
+                  link.classList.remove('active');
+              });
+
+            
+              this.classList.add('active');
+          });
+      });
+  });
+</script>
